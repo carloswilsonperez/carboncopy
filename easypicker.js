@@ -147,9 +147,7 @@
    
         } else {
             daysElapsedBeforeThisMonth = daysElapsedBeforeCurrentMonth[currentMonthIndex];
-        }      
-      
-        //alert("Days elapsed before " + currentMonth + " = " + daysElapsedBeforeThisMonth);
+        }                
 
         var indexOfFirstDayForThisMonth = (L + offset + daysElapsedBeforeThisMonth) % 7;
         //alert("El 1 de este mes cae en " + dias[indexOfFirstDayForThisMonth]);

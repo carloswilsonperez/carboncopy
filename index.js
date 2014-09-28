@@ -222,8 +222,7 @@ $(document).ready(function() {
         //Restaurar los colores  del elemento #orderby.
         $('#orderby').css('color', 'black');
         $('#orderby').css('background-color', 'transparent');
-    });
-    
+    });    
         
         
     //Definición de hover para icono del carrito de la parte superior derecha de la pantalla.
@@ -681,11 +680,9 @@ $(document).ready(function() {
 
     document.getElementById("logintel").addEventListener("click", show_contact_form, false);
 
-
     //También ocultar todos los menus al salir de la zona de menus.
     document.getElementById('auxiliarybanner').addEventListener("mouseenter", hide_all_menus, false);
     document.getElementById('mostrador').addEventListener("mouseover", hide_all_menus, false);
-
     
     //Esta función se activa al hacer click sobre el logo superior izquierdo.
     $('#navheader').click(function() {
@@ -739,8 +736,7 @@ $(document).ready(function() {
 
         //Pasar el objeto 'obj' almodificador de escenario y al historia.
         modify_scenery(obj);
-    }
-    
+    }    
     
     
     
@@ -856,7 +852,6 @@ $(document).ready(function() {
     
     
     
-    //DEPRECATED
     //Esta función se invoca únicamente cuando el usuario intentó ver el carrito sin estar logeado.
     //Una vez logeado, esta función permite que el usuario vuelva al cart1_4 o al carrito vació,
     //dependiendo de si tiene artículos o no. El carro reemplaza al login del historial.
@@ -1950,8 +1945,8 @@ $(document).ready(function() {
                     data: dataToSend,
                     contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
                     dataType: "html",            
-                    success: function(results){            
-                            
+                    success: function(results){
+                           
                             //Checa si ya existe una instancia del letrero de subcategoría.
                             var aux_long = $("#auxiliarybanner").children("#bright_subcat").length;
                             if (aux_long > 0) {
@@ -1962,9 +1957,6 @@ $(document).ready(function() {
                             $("#auxiliarybanner").prepend(aux);
 
                             $('#mostrador').html(results);
-                            
-                            
-                            
                             replace_item_pictures();     
                             
                             var num_items = $('#mostrador div.itembox').length;
